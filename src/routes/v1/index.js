@@ -5,6 +5,8 @@ const router=express.Router();
 
 const bookingController = new BookingController();
 
+
+
 router.post('/bookings', bookingController.create);
 router.post("/publish",bookingController.sendMessageToQueue);
 
