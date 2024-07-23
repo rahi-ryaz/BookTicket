@@ -12,7 +12,7 @@ const setupAndStartServer=()=>{
     app.use(bodyParser.json());
     app.use(bodyParser.urlencoded({extended:true}));
 
-    app.use("/api",apiRoutes);
+    app.use("/bookingservice/api",apiRoutes);
 
 
    app.listen(PORT, ()=>{
